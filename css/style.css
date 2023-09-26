@@ -1,0 +1,108 @@
+/* initiliasation de tout les styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html{
+    background-color: black;
+} */
+
+/* initialisation de la font family */
+@font-face{
+    font-family: 'Roboto';
+    src: url('/police/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: "BricolageGrotesque";
+    src: url("/police/static/BricolageGrotesque_18pt-ExtraLight.ttf");
+}
+/* declaration de variable en css */
+:root{
+--yellow-color: #FFFF00;
+--yellow-light: #f8f184;
+--blue-color:#19587D;
+--white-color:#fff;
+
+
+}
+
+h1{
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 400; 
+    line-height: 2.5; 
+}
+button{
+    font-family: 'roboto';
+    font-size: 20px ;
+    font-weight: 400;
+}
+/* pour faire un centrage automatique sur les largeur ou les hauteurs  on utilise le auto ,  */
+/* le display inline block transforme les element inline en element inline avec des width et des height  
+Au contraire, le display block donne deja ces deux element mais il revient a la ligne*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container-article{
+    width: 90%;
+    margin: 0 auto;
+}
+.container-special{
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'BricolageGrotesque';
+    font-weight: 300;
+}
+/* design pour la navigation  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 2.5em 4.7em;
+    border: 1px solid grey;
+}
+nav>ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 1.6em;
+    font-family: "BricolageGrotesque";
+}
+nav ul li a:hover{
+    color: var(--yellow-color);
+}
+/* desgin pour la partie en tete hero  */
+header{
+    background-image: url('/Assets/Illustrations/Bathome1.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+/* design pour les card de personnage */
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 0 6em;
+}
+.batman-personnage img{
+    width: fit-content;
+    height: 80%;
+}
+.texte{
+    text-align: center;
+}
