@@ -23,6 +23,8 @@
 --yellow-light: #f8f184;
 --blue-color:#19587D;
 --white-color:#fff;
+--gradient-white: #eddebf8e;
+--gradient-red: #89000967;
 
 
 }
@@ -32,6 +34,7 @@ h1{
     font-size: 36px;
     font-weight: 400; 
     line-height: 2.5; 
+    text-transform: uppercase;
 }
 button{
     font-family: 'roboto';
@@ -42,12 +45,17 @@ button{
 /* le display inline block transforme les element inline en element inline avec des width et des height  
 Au contraire, le display block donne deja ces deux element mais il revient a la ligne*/
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
 }
 .container-article{
     width: 90%;
     margin: 0 auto;
+}
+.container-article p{
+    text-align: justify;
 }
 .container-special{
     width: 85%;
@@ -67,7 +75,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 30px 2.5em 4.7em;
-    border: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 nav>ul{
     list-style: none;
@@ -93,16 +101,126 @@ header{
     width: 100%;
     height: 100vh;
 }
+/* design generale du .container dans header */
+header div.container{
+    height: 100%;
+}
+header div.container p{
+    width: 62%;
+    margin: 0 auto;
+}
 /* design pour les card de personnage */
 .batman-personnage{
     display: flex;
     justify-content: space-between;
+    gap: 4rem;
     padding: 4em 0 6em;
+    width: 100%;
+}
+.batman-personnage p{
+    text-align: center;
 }
 .batman-personnage img{
-    width: fit-content;
+    width: 100%;
     height: 80%;
 }
 .texte{
     text-align: center;
 }
+/* design a l'interieur de header */
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 10em;
+}
+.titre{
+    margin: 1.7em 0;
+}
+.btn-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.btn{
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 1.5em 2em;
+    border: #fff;
+    background-image: linear-gradient(80deg, var(--gradient-white) 40%,var(--gradient-red) 70%);
+    box-shadow: black 5px 5px 60px;
+}
+main #imgfleche{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    padding: 2em 3em;
+    margin: 0 auto;
+}
+.reseau-scrol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    gap: 1em;
+    top: 44vh;
+    right: 2.6em; 
+}
+.reseau-scrol img{
+    width: 70%;
+}
+.reseau-scrol img[src="/Assets/Logos/icon_facebook.png"],.reseau-scrol img[src="/Assets/Logos/icon_ig.png"],.reseau-scrol img[src="/Assets/Logos/icon_tw.png"]{
+    width: min-content;
+}
+/* design pour le multimedia */
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 5em;
+    
+}
+#Multimedia .card button{
+    background-color: black;
+    border: black 1px solid;
+    width: 5%;
+    height: auto;
+}
+.slide-card{
+    background-image: linear-gradient(rgba(90, 75, 75, 0.808),rgb(61, 51, 51));
+    box-shadow: grey 0 0 5px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    font-size: small;
+    line-height: 1.2;
+    align-content: center;
+    padding: 1em 0;
+}
+.slide-card h2,h3{
+    line-height: 1.5;
+}
+.fete-card{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    height:min-content;
+}
+.fete-card div img{
+    height: 100%;
+}
+.container .imgmulti{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.imgmulti img{
+    width: 70%;
+}
+
