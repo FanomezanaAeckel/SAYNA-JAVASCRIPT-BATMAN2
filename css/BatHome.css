@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+  font-weight: 300;
+}
+
+button {
+  font-family: "roboto";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/police/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Manrope";
+  src: url(/police/Manrope.ttf);
+}
+body {
+  font-family: "Manrope";
+}
+
+h1 {
+  font-family: "Roboto";
+}
+
+footer {
+  font-size: x-small;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 2.5em 4.7em;
+  border-bottom: 1px solid grey;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6em;
+}
+nav ul li a:hover {
+  color: #FFFF00;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5em 2em;
+  border: #fff;
+  background-image: linear-gradient(80deg, rgba(237, 222, 191, 0.5568627451) 40%, rgba(137, 0, 9, 0.4039215686) 70%);
+  box-shadow: black 5px 5px 60px;
+}
+
+.reseau-scrol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  gap: 1em;
+  top: 44vh;
+  right: 2.6em;
+}
+.reseau-scrol img {
+  width: 70%;
+}
+.reseau-scrol img[src="/Assets/Logos/icon_facebook.png"], .reseau-scrol img[src="/Assets/Logos/icon_ig.png"], .reseau-scrol img[src="/Assets/Logos/icon_tw.png"] {
+  width: min-content;
+}
+
+.btn-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container .imgmulti {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .imgmulti img {
+  width: 70%;
+}
+
+#imgfleche {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  min-width: 150px;
+  padding: 2em 3em;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2em;
+}
+
+.batman-personnage, .demande {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 4em 0 6em;
+  width: 100%;
+}
+.batman-personnage img, .demande img {
+  width: 100%;
+  height: 80%;
+}
+
+/* pour faire un centrage automatique sur les largeur ou les hauteurs  on utilise le auto ,  */
+/* le display inline block transforme les element inline en element inline avec des width et des height  
+Au contraire, le display block donne deja ces deux element mais il revient a la ligne*/
+header {
+  background-image: url("/Assets/Illustrations/Bathome1.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+header div.container {
+  height: 100%;
+}
+header div.container #monHero .content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
+  padding-top: 10em;
+}
+header div.container #monHero .content p {
+  width: 62%;
+  margin: 0 auto;
+}
+header div.container #monHero .content .titre {
+  margin: 1.7em 0;
+}
+header div.container #monHero .content .btn-container {
+  justify-content: space-between;
+}
+
+.texte {
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 2.5;
+  text-transform: uppercase;
+}
+
+.container-article {
+  width: 90%;
+  margin: 0 auto;
+}
+.container-article p {
+  text-align: justify;
+}
+
+.container-special {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 5em;
+}
+.card button {
+  background-color: black;
+  border: black 1px solid;
+  width: 5%;
+  height: auto;
+}
+.card .fete-card {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  height: min-content;
+}
+.card .fete-card div img {
+  height: 100%;
+}
+.card .fete-card .slide-card {
+  background-image: linear-gradient(rgba(90, 75, 75, 0.808), rgb(61, 51, 51));
+  box-shadow: grey 0 0 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: small;
+  line-height: 1.2;
+  align-content: center;
+  padding: 1em 0;
+}
+.card .fete-card .slide-card h2, .card .fete-card .slide-card h3 {
+  line-height: 1.5;
+}
+
+.formulaire {
+  width: 100%;
+  background-image: linear-gradient(125deg, rgba(237, 222, 191, 0.5568627451) 20%, #19587D);
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.formulaire h2 {
+  padding: 2em 0;
+}
+.formulaire form {
+  line-height: 1.2;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: 80%;
+}
+.formulaire form input {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.formulaire form input[type=submit] {
+  color: #fff;
+  text-decoration: none;
+  padding: 1.2em 1em;
+  border: #fff;
+  background-image: linear-gradient(80deg, rgba(112, 110, 110, 0.664) 10%, rgba(97, 6, 6, 0.753) 70%);
+  box-shadow: black 5px 5px 60px;
+  margin: 3em 30%;
+}
+
+.demande {
+  justify-content: space-evenly;
+}
+.demande a {
+  text-decoration: none;
+  padding: 1em 1.2em;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.596);
+  border-right-color: #19587D;
+  border-bottom-color: #19587D;
+  box-shadow: inset -2px 0 6px #19587D;
+}
+
+/*# sourceMappingURL=BatHome.css.map */

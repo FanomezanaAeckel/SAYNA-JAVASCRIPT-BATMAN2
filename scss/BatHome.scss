@@ -1,0 +1,154 @@
+// -----------------------------------------------Initialisation des regle de mise en forme generale -----------------------------------------------
+@import "lib/All/Init.scss";
+@import "./lib/All/font.scss";
+@import "lib/All/nav.scss";
+@import "lib/All/header.scss";
+@import"./lib/All/Allclass.scss";
+@import"./lib/All/footer.scss";
+@import './lib/BatCover/batperso.scss';
+
+// -----------------------------------------------Initialisation des Css homepage  -----------------------------------------------
+/* pour faire un centrage automatique sur les largeur ou les hauteurs  on utilise le auto ,  */
+/* le display inline block transforme les element inline en element inline avec des width et des height  
+Au contraire, le display block donne deja ces deux element mais il revient a la ligne*/
+
+header{ 
+    @include header1;
+    div.container{
+        height: 100%;
+        #monHero{
+            .content{
+                display: flex;
+                justify-content: space-evenly;
+                flex-flow: column wrap;
+                text-align: center;
+                width: 60%;
+                margin: 0 auto;
+                height: auto;
+                padding-top: 10em;
+                p{
+                    width: 62%;
+                    margin: 0 auto;
+                }
+                .titre{
+                    margin: 1.7em 0;
+                }
+                .btn-container{
+                    justify-content: space-between;
+                
+                }
+            }
+        }
+    }
+}
+// ---------------------------------------- Spécial pour le H1 ---------------------------------------- 
+.texte{
+    text-align: center;
+}
+h1{
+    font-size: 36px;
+    font-weight: 400; 
+    line-height: 2.5; 
+    text-transform: uppercase;
+}
+//  ---------------------- pour les carte de perso ------------------------
+.container-article{
+    width: 90%;
+    margin: 0 auto;
+    p{
+        text-align: justify;
+    }
+}
+.container-special{
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+// ------------------------------------ pour la section multimedia ---------------------------------------
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 5em;
+    button{
+        background-color: black;
+        border: black 1px solid;
+        width: 5%;
+        height: auto;
+    }
+// ----------------------------------- section special pour le card du multimedia ------------------------------
+    .fete-card{
+        display: flex;
+        width: 60%;
+        height: 100%;
+        height:min-content;
+        div img{
+            height: 100%;
+        }
+        .slide-card{
+            background-image: linear-gradient(rgba(90, 75, 75, 0.808),rgb(61, 51, 51));
+            box-shadow: grey 0 0 5px;
+            border-top-right-radius:10px;
+            border-bottom-right-radius:10px;
+            font-size: small;
+            line-height: 1.2;
+            align-content: center;
+            padding: 1em 0;
+            h2,h3{
+                line-height: 1.5;
+            }
+        }
+    }
+}
+// ----------------------------- mise en forme du formulaire  ----------------------------
+.formulaire{
+    width: 100%;
+    background-image: linear-gradient(125deg, $gradient-white 20%, $blue-color );
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        // text-align: center;
+        padding: 2em 0;
+    }
+    form{
+        line-height: 1.2;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        height: 80%;
+        input{
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            border-bottom: 1px solid $white-color;
+        }
+        input[type="submit"]{
+            color: $white-color;
+            text-decoration: none;
+            padding: 1.2em 1em;
+            border: #fff;
+            background-image: linear-gradient(80deg, rgba(112, 110, 110, 0.664) 10%,rgba(97, 6, 6, 0.753) 70%);
+            box-shadow : black 5px 5px 60px;
+           margin: 3em 30%;
+        }
+    }
+}
+.demande{
+    @extend .batman-personnage;
+    justify-content: space-evenly;
+    a{
+        text-decoration: none;
+        padding: 1em 1.2em;
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.596);
+        border-right-color: $blue-color;
+        border-bottom-color: $blue-color;
+       box-shadow: inset -2px 0 6px $blue-color;
+    }
+}

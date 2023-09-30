@@ -1,0 +1,59 @@
+// classe generale utilisé par les deux page 
+.container {
+    width: 85%;
+    margin: 0 auto;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+// Pour les bouttons 
+.btn{
+    color: $white-color;
+    text-decoration: none;
+    padding: 1.5em 2em;
+    border: #fff;
+    background-image: linear-gradient(80deg, $gradient-white 40%,$gradient-red 70%);
+    box-shadow : black 5px 5px 60px;
+}
+// ------------------------ Pour la barre defilante a droite --------------------------------
+
+.reseau-scrol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    gap: 1em;
+    top: 44vh;
+    right: 2.6em;
+    img{
+        width: 70%;
+    } 
+    img[src="/Assets/Logos/icon_facebook.png"],img[src="/Assets/Logos/icon_ig.png"],img[src="/Assets/Logos/icon_tw.png"]{
+        width: min-content;
+    }
+}
+
+.btn-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.container .imgmulti{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 70%;
+    }
+}
+// id special pour la fleche descendant
+#imgfleche{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    min-width: 150px;
+    padding: 2em 3em;
+    margin: 0 auto;
+}

@@ -1,0 +1,22 @@
+
+// design sur la partie navigation 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 2.5em 4.7em;
+    border-bottom: 1px solid grey;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 1em;
+        li a{
+            color: $white-color;
+            font-weight: 500;
+            font-size: 1.6em;
+            &:hover{
+                color: $yellow-color;
+            }
+        }
+    }
+}

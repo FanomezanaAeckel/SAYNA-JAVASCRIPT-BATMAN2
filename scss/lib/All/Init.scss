@@ -1,0 +1,25 @@
+// Declaration des style generales
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// declaration des variable a utilisé
+$yellow-color: #FFFF00;
+$yellow-light: #f8f184;
+$blue-color:#19587D;
+$white-color:#fff;
+$gradient-white: #eddebf8e;
+$gradient-red: #89000967;
+// Parti body du code
+body{
+    background-color: black;
+    color: $white-color;
+    font-weight: 300;
+}
+// Pour chaque boutton 
+button{
+    font-family: 'roboto';
+    font-size: 20px ;
+    font-weight: 400;
+}

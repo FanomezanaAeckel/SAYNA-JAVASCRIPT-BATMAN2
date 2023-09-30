@@ -1,0 +1,19 @@
+// declaration des font et ces differente utilisation utilisé 
+@font-face {
+    font-family: 'Roboto';
+    src: url(/police/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Manrope';
+    src: url(/police/Manrope.ttf);
+}
+body{
+    font-family: 'Manrope';
+}
+h1{
+    font-family: 'Roboto';
+   
+}
+footer{
+    font-size: x-small;
+}
