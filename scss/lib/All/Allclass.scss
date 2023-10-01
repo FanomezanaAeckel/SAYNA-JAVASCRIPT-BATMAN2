@@ -2,8 +2,9 @@
 .container {
     width: 85%;
     margin: 0 auto;
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
+    border-left: 3px solid darken(white , 60);
+    border-right: 3px solid darken(white , 60);
+    // min-width: 850px;
 }
 // Pour les bouttons 
 .btn{
@@ -42,6 +43,7 @@
 
 .container .imgmulti{
     width: 100%;
+    padding: 0 0 10%;
     display: flex;
     justify-content: center;
     img{

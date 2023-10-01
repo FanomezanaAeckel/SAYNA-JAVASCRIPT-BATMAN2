@@ -51,6 +51,32 @@ h1{
     line-height: 2.5; 
     text-transform: uppercase;
 }
+// ------------- pour les petit emplament special -------------------------------
+.nem{
+    display: flex;
+    align-items:flex-end ;
+    height: min-content;
+    // border: 1px solid #fff;
+    h1{
+    }
+    img{
+        text-indent: 20%;    
+        width: 30%;
+        height: fit-content;
+        transform: translate(-150px,0);
+    }
+}
+.Fallpos{
+    width: max-content;
+    height: max-content;
+    // border: 1px solid #fff;
+    position: absolute;
+    right: 0;
+    transform: translate(0,-250px);
+    }
+.coloryellow{
+    color: $yellow-color;
+}
 //  ---------------------- pour les carte de perso ------------------------
 .container-article{
     width: 90%;
@@ -84,6 +110,7 @@ h1{
         width: 60%;
         height: 100%;
         height:min-content;
+        min-width: 464px;
         div img{
             height: 100%;
         }
@@ -105,17 +132,21 @@ h1{
 // ----------------------------- mise en forme du formulaire  ----------------------------
 .formulaire{
     width: 100%;
+    height: 30;
     background-image: linear-gradient(125deg, $gradient-white 20%, $blue-color );
     display: flex;
     align-content: center;
     flex-direction: column;
     align-items: center;
     h2{
-        // text-align: center;
-        padding: 2em 0;
+        padding: 1.8em 0;
+    }
+    label[for="email"],label[for="newsletter"]{
+        color: lighten(white,100);
+        font-weight: 600;
     }
     form{
-        line-height: 1.2;
+        line-height: 1;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -138,8 +169,13 @@ h1{
         }
     }
 }
+// ----------------------------- section pour les bouttons dans le formulaire -------------------------------------
+
 .demande{
-    @extend .batman-personnage;
+    display: flex;
+    gap: 4rem;
+    padding: 2em 0 6em;
+    width: 100%;
     justify-content: space-evenly;
     a{
         text-decoration: none;
@@ -150,5 +186,80 @@ h1{
         border-right-color: $blue-color;
         border-bottom-color: $blue-color;
        box-shadow: inset -2px 0 6px $blue-color;
+    }
+}
+.elmtnspec{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid darken(white, 25);
+    width: 100%;
+    margin-bottom: 5%;
+    .sp1{
+        width: 90%;
+        color: #fff;
+    }
+    .sp2{
+        width: 5%;
+        display: flex;
+        align-items: center;
+        img{
+            width: 50%;
+            height: 50%;
+            background-color: darken(white,10);
+        }
+    }
+}
+.elt{
+    border-bottom: 1px solid darken(white, 25);
+}
+#chex{
+    width: 80%;
+    margin-bottom: 2%;
+}
+ 
+// ------------------------ section citation------------------------------------
+#citation{
+    // border: blue 1px solid ;
+    margin: 0 auto;
+    width: 80%;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content:center ;
+
+    #node1{
+        padding: 2em 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    #node2{
+        display: flex;
+        line-height: 1.3;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    #node3{
+        padding: 2em 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+// --------------- en dernier point les footer logos ---------------------------------
+.logo{
+    margin: 0 auto;
+    padding: 3em 0;
+    width: 60%;
+    display: flex;
+    justify-content:center ;
+    gap: 3em;
+    align-items: center;
+    img{
+        width: max-content;
+        height: 100%;
+        object-fit: cover;
     }
 }

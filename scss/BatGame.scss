@@ -1,0 +1,33 @@
+@import "lib/All/Init.scss";
+@import "./lib/All/font.scss";
+@import "lib/All/nav.scss";
+@import "lib/All/header.scss";
+@import"./lib/All/Allclass.scss";
+@import"./lib/All/footer.scss";
+// --------------------------------initialisation des var generale-------------------------------------- 
+// (------------------- Pour le header----------------------------------)
+header{
+    @include header2;
+    div.container{
+        height: 100%;
+    }
+    h1{
+        // border: 1px solid grey;
+        color:white;
+        font-weight: 600;
+        font-size: 3em;
+        margin: 0 5%;
+        padding: 4em 0;
+        height: 100%;
+        width: 33%;
+        text-transform: uppercase;
+        
+    }
+}
+// (----------------------------------------------Pour le principale ------------------------------------)
+main h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:$blue-color;
+    padding: 10% 0;
+}
