@@ -43,6 +43,9 @@ nav {
   padding: 30px 2.5em 4.7em;
   border-bottom: 3px solid #666666;
 }
+nav #deblogo:hover {
+  filter: sepia(100%) saturate(1680%) brightness(200%) contrast(100%);
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -62,8 +65,14 @@ nav ul li a:hover {
   margin: 0 auto;
   border-left: 3px solid #666666;
   border-right: 3px solid #666666;
+  min-width: 850px;
 }
 
+@media screen and (max-width: 850px) {
+  .container {
+    display: block;
+  }
+}
 .btn {
   color: #fff;
   text-decoration: none;
@@ -85,6 +94,9 @@ nav ul li a:hover {
 }
 .reseau-scrol img {
   width: 70%;
+}
+.reseau-scrol img:hover {
+  filter: sepia(100%) saturate(1680%) brightness(200%) contrast(100%);
 }
 .reseau-scrol img[src="/Assets/Logos/icon_facebook.png"], .reseau-scrol img[src="/Assets/Logos/icon_ig.png"], .reseau-scrol img[src="/Assets/Logos/icon_tw.png"] {
   width: min-content;
@@ -152,10 +164,14 @@ footer {
   border: #fff;
   background-image: linear-gradient(80deg, rgba(237, 222, 191, 0.5568627451) 40%, rgba(137, 0, 9, 0.4039215686) 70%);
   box-shadow: black 5px 5px 60px;
-  transform: translate(0, -50px);
 }
 .batcaption .coloryellow {
   text-align: center;
+}
+
+.imgZoom {
+  transform: scale(1.2, 1.1);
+  transition: all 0.5s;
 }
 
 /* pour faire un centrage automatique sur les largeur ou les hauteurs  on utilise le auto ,  */
@@ -357,7 +373,6 @@ h1 {
 .elmtnspec .sp2 img {
   width: 50%;
   height: 50%;
-  background-color: #e6e6e6;
 }
 
 .elt {

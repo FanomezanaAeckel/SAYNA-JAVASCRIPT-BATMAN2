@@ -4,7 +4,12 @@
     margin: 0 auto;
     border-left: 3px solid darken(white , 60);
     border-right: 3px solid darken(white , 60);
-    // min-width: 850px;
+    min-width: 850px;
+}
+@media screen and (max-width:850px){
+     .container{
+        display: block;
+     }
 }
 // Pour les bouttons 
 .btn{
@@ -28,6 +33,9 @@
     right: 2.6em;
     img{
         width: 70%;
+        &:hover{
+            filter:sepia(100%) saturate(1680%) brightness(200%) contrast(100%);
+        }
     } 
     img[src="/Assets/Logos/icon_facebook.png"],img[src="/Assets/Logos/icon_ig.png"],img[src="/Assets/Logos/icon_tw.png"]{
         width: min-content;

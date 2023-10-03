@@ -16,7 +16,6 @@
     }
 }
 .batcaption{
-    // display: none;
     border: 1px solid transparent;
     padding: 20% auto;
     border-radius: 40px;
@@ -26,8 +25,11 @@
     border: #fff;
     background-image: linear-gradient(80deg, $gradient-white 40%,$gradient-red 70%);
     box-shadow : black 5px 5px 60px;
-    transform: translate(0,-50px);
     .coloryellow{
         text-align: center;
     }
+}
+.imgZoom{
+    transform: scale(1.2,1.1);
+    transition: all 0.5s;
 }

@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman T4SU | Home</title>
     <link rel="stylesheet" href="/css/BatHome.css">
+    <link rel="shortcut icon" href="./Assets/Logos/logohome.png" type="image/x-icon">
 </head>
 <body>
+    <canvas style="position: absolute;" width="50" height="20" id="canvas"></canvas>
     <header>
         <nav class="container">
             <a href="index.html">
-                <img src="./Assets/Logos/logohome.png" alt="logo ">
+                <img src="./Assets/Logos/logohome.png" alt="logo " id="deblogo">
             </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,11 +21,11 @@
         </nav>
           <!-- <!$ les reseau sociaux avec le scrolling $> -->
           <div class="reseau-scrol">
-            <img src="/Assets/Logos/logo_bat_flèche.png" alt="batman fleche">
+            <img src="/Assets/Logos/logo_bat_flèche.png" alt="batman fleche" id="Top">
             <img src="/Assets/Logos/icon_facebook.png" alt="icon_facebook">
             <img src="/Assets/Logos/icon_ig.png" alt="icon-instagram">
             <img src="/Assets/Logos/icon_tw.png" alt="icon-twitter">
-            <img src="/Assets/Logos/logo_bat_flèche_2.png" alt="batman fleche ">
+            <img src="/Assets/Logos/logo_bat_flèche_2.png" alt="batman fleche " id="Bottom">
         </div>
         <!-- <!$ La premiere section concernant mon projet batman $> -->
         <div class="container">
@@ -56,21 +58,21 @@
                     par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples 
                     acteurs d’interpréter l’homme chauve-souris. Voici les trois derniers :</p>
                     <div class="batman-personnage">
-                        <div>
+                        <div class='imag'>
                             <img src="/Assets/Illustrations/Bathome2.png" alt="Batman2022">
                             <div class="batcaption">
                                 <h3 class="texte">Robert Pattinson</h3>
                                 <p class="coloryellow texte">(2022)</p>
                             </div>
                         </div>
-                        <div>
+                        <div class='imag'>
                             <img src="/Assets/Illustrations/Bathome3.png" alt="Batman2006">
                             <div class="batcaption">
                                 <h3 class="texte">Christia Bale</h3>
                                 <p class="coloryellow texte">(2006 - 2008 - 2012)</p>
                             </div>
                         </div>
-                        <div>
+                        <div class='imag'>
                             <img src="/Assets/Illustrations/Bathome4.png" alt="Batman2016">
                             <div class="batcaption">
                                 <h3 class="texte">Ben Affleck</h3>
@@ -93,23 +95,23 @@
                     mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmi les 
                     derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :</p>
                     <div class="batman-personnage">
-                        <div>
-                            <img src="/Assets/Illustrations/Bathome5.png" alt="Mystere2022">
-                            <div class="batcaption">
+                        <div class='imag'>
+                            <img src="/Assets/Illustrations/Bathome5.png" alt="Mystere2022" >
+                            <div class="caption batcaption">
                                 <h3 class="texte">The Riddler Paul Dano</h3>
                                 <p class="coloryellow texte">(2022)</p>
                             </div>
                         </div>
-                        <div>
-                            <img src="/Assets/Illustrations/Bathome6.png" alt="Batman2016">
-                            <div class="batcaption">
+                        <div class='imag'>
+                            <img src="/Assets/Illustrations/Bathome6.png" alt="Batman2016"  >
+                            <div class="caption batcaption">
                                 <h3 class="texte">Le Joker Heath Ledger</h3>
                                 <p class="coloryellow texte">(2008)</p>
                             </div>
                         </div>
-                        <div>
-                            <img src="/Assets/Illustrations/Bathome7.png" alt="Batman2016">
-                            <div class="batcaption">
+                        <div class='imag'>
+                            <img src="/Assets/Illustrations/Bathome7.png" alt="Batman2016" >
+                            <div class="caption batcaption">
                                 <h3 class="texte">Darkseid Ray Porter</h3>
                                 <p class="coloryellow texte">(2022)</p>
                             </div>
@@ -130,21 +132,21 @@
                     police, Bruce pourra compter sur l’aide infaillible de James Gordon, “Jim , qui désire lui aussi 
                     nettoyer sa ville de la criminalité qui y règne.</p>
                     <div class="batman-personnage">
-                        <div class="Batmancard" >
+                        <div class='imag' >
                             <img src="/Assets/Illustrations/Bathome9.png" alt="">
                             <div class="batcaption">
                                 <h3 class="texte">Alfred Pennyworth Michael Cain</h3>
                                 <p class="coloryellow texte">(2006 2008 2012)</p>
                             </div>
                         </div>
-                        <div class="Batmancard">
+                        <div class='imag'>
                             <img src="/Assets/Illustrations/Bathome8.png" alt="">
                             <div class="batcaption">
                                 <h3 class="texte">Catwoman Zoé Kravitz</h3>
                                 <p class="coloryellow texte">(2008)</p>
                             </div>
                         </div>
-                        <div class="batmancard">
+                        <div class='imag'>
                             <img src="/Assets/Illustrations/Bathome10.png" alt=>
                             <div class="batcaption">
                                 <h3 class="texte">James Gordon</h3>
@@ -271,7 +273,7 @@
         </div>
     </footer>
     <script src="/script/bathome.js">
-
     </script>
+    <script src="./script/scroll.js"></script>
 </body>
 </html>

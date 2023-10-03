@@ -6,6 +6,11 @@ nav{
     align-items: center;
     padding: 30px 2.5em 4.7em;
     border-bottom: 3px solid darken(white , 60);
+    #deblogo{
+        &:hover{
+            filter:sepia(100%) saturate(1680%) brightness(200%) contrast(100%);
+        }
+    }
     ul{
         list-style: none;
         display: flex;

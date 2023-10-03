@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BATMAN T4SU | QUIZ GAME</title>
     <link rel="stylesheet" href="/css/BatGame.css">
+    <link rel="shortcut icon" href="./Assets/Logos/logohome.png" type="image/x-icon">
 </head>
 <body>
+    <!-- -----------------------SECTION HEADER   ----------------- -->
+    <canvas style="position: absolute;" width="50" height="20" id="canvas"></canvas>
 
     <header>
         <nav class="container">
             <a href="index.html">
-                <img src="./Assets/Logos/logohome.png" alt="logo ">
+                <img src="./Assets/Logos/logohome.png" alt="logo " id="deblogo">
             </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,17 +23,18 @@
         </nav>
           <!-- <!$ les reseau sociaux avec le scrolling $> -->
           <div class="reseau-scrol">
-            <img src="/Assets/Logos/logo_bat_flèche.png" alt="batman fleche">
+            <img src="/Assets/Logos/logo_bat_flèche.png" alt="batman fleche" id="Top">
             <img src="/Assets/Logos/icon_facebook.png" alt="icon_facebook">
             <img src="/Assets/Logos/icon_ig.png" alt="icon-instagram">
             <img src="/Assets/Logos/icon_tw.png" alt="icon-twitter">
-            <img src="/Assets/Logos/logo_bat_flèche_2.png" alt="batman fleche ">
+            <img src="/Assets/Logos/logo_bat_flèche_2.png" alt="batman fleche " id="Bottom">
         </div>
         <!-- <!$ Section header Presentation $> -->
         <div class="container">
             <h1>Let's play a little game ...</h1>
         </div>
     </header>
+    <!-- SECTION MAIN  -->
     <main>
         <div class="container" >
             <img id="imgfleche" src="/Assets/Logos/flèche_down_header.png" alt="flèche_down_header">
@@ -38,8 +42,33 @@
             <div class="imgmulti">
                 <img src="/Assets/Illustrations/Batgame_2.png" alt="">
             </div>
+            <div id='butonBegin'>
+                <span class="btn begin">DEMARRER LE QUIZ</span>
+            </div>
+                 <!--       Pour la partie quiz game  -->
+            <section id="game">
+                <div id="NavQuestion"></div>
+                <div id="Quizz">
+                    <div id="imgContainer">
+                        <img src="" alt="ImgIcone" id="Image">
+                    </div>
+                    <section >
+                        <div id="QuestionValue"></div>
+                        <div id="AnswerValue"></div>            
+                    </section>
+                </div>
+                <span  id="Next"><button class="begin">QUESTION SUIVANT</button> </span>           
+            
+            </section>
         </div>
+        <section id="Result">
+            <h1 id="finalScore"></h1>
+            <h2 id="finalP"></h2>
+        </section>
+
     </main>
+
+    <!-- SECTION FOOTER   -->
     <footer class="container">
             <div>
                 <img src="/Assets/Logos/icon_WB.png" alt="WarnerBros">Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
@@ -61,5 +90,7 @@
                 </a>
             </div>
     </footer>
+    <script src="./script/scroll.js"></script>
+    <script src="./script/batgame.js"></script>
 </body>
 </html>
