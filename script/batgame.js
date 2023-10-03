@@ -76,6 +76,7 @@ const first=document.getElementById('butonBegin');
 gamepart.style.display='none';
 const allHeader=document.querySelector('header');
 const allBody=document.querySelector('main div.container');
+const allfooter=document.querySelector('footer');
 const contentResult=document.getElementById('Result');
 const contentResultFin=document.getElementById('resulcont');
 contentResult.style.display='none';
@@ -151,6 +152,7 @@ function displayResult(){
     contentResult.style.display='flex';
     allHeader.classList.add('hidden');
     allBody.classList.add('hidden');
+    allfooter.classList.add('hidden');
     const finalResult=document.getElementById('finalScore');
     const remerciement=document.getElementById('finalP');
     const btnFin = document.createElement("button");
