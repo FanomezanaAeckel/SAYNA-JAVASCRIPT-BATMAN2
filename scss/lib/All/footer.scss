@@ -9,3 +9,18 @@ footer{
     justify-content: center;
     line-height: 2em;
 }
+// --------------- en dernier point les footer logos ---------------------------------
+.logo{
+    margin: 0 auto;
+    padding: 3em 0;
+    width: 60%;
+    display: flex;
+    justify-content:center ;
+    gap: 3em;
+    align-items: center;
+    img{
+        width: max-content;
+        height: 100%;
+        object-fit: cover;
+    }
+}

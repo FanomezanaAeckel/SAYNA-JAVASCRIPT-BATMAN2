@@ -151,6 +151,21 @@ footer {
   line-height: 2em;
 }
 
+.logo {
+  margin: 0 auto;
+  padding: 3em 0;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  align-items: center;
+}
+.logo img {
+  width: max-content;
+  height: 100%;
+  object-fit: cover;
+}
+
 header {
   background-image: url("/Assets/Illustrations/Batgame_1.png");
   background-size: cover;
