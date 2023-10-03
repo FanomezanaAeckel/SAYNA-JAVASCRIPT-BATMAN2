@@ -6,11 +6,12 @@
     border-right: 3px solid darken(white , 60);
     min-width: 850px;
 }
-@media screen and (max-width:850px){
-     .container{
-        display: block;
-     }
-}
+// @media screen and (max-width:850px){
+//      .container{
+//         display: flex;
+//         flex-direction: column;
+//      }
+// }
 // Pour les bouttons 
 .btn{
     color: $white-color;
@@ -28,7 +29,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    gap: 1em;
+    gap: 1.5em;
     top: 44vh;
     right: 2.6em;
     img{
@@ -66,4 +67,25 @@
     min-width: 150px;
     padding: 2em 3em;
     margin: 0 auto;
+}
+// ----------------------------------- KEYFRAMES / ZOOM -------------------------------
+@keyframes zoomIn{
+    from{
+        transform: scale(0,0);
+    }
+    50%{
+        transform: scale(0.5,0.5);
+    }
+    to{
+        transform: scale(1,1);
+    }
+}
+@keyframes slider{
+    from{
+        transform: translate(-1000px,0);
+    }
+    to{
+        transform: translate(0,0);
+        
+    }
 }

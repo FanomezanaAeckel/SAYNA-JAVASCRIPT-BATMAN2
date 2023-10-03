@@ -74,11 +74,17 @@ const demarrer= document.querySelector('.begin');
 const gamepart=document.getElementById('game');
 const first=document.getElementById('butonBegin');
 gamepart.style.display='none';
+const allHeader=document.querySelector('header');
+const allBody=document.querySelector('main div.container');
+const contentResult=document.getElementById('Result');
+const contentResultFin=document.getElementById('resulcont');
+contentResult.style.display='none';
 // --------------------------- Initialisation du game ---------------------------------------
 
 demarrer.addEventListener('click',()=>{
     first.style.display='none';
-    gamepart.style.display='initial';
+    gamepart.style.display='flex';
+
     DisplayQuestion();
 })    
 
@@ -140,11 +146,9 @@ function NextFunctions(){
     checkValue();
     changeImage();
 }    
-const allHeader=document.querySelector('header');
-const allBody=document.querySelector('main div.container');
-const contentResult=document.getElementById('Result');
+
 function displayResult(){
-    contentResult.classList.add('.flex');
+    contentResult.style.display='flex';
     allHeader.classList.add('hidden');
     allBody.classList.add('hidden');
     const finalResult=document.getElementById('finalScore');
@@ -153,7 +157,7 @@ function displayResult(){
     btnFin.id = "mybutton";
     btnFin.textContent = "recommencer le quiz";
     const reAgain = document.createElement("a");
-    reAgain.classList.add('.begin');
+    reAgain.id="finbtn";
     if(score<5){
         finalResult.textContent=`${score}/${questions.length}`+" C'est pas tout a fait ça...";
         remerciement.textContent="Oula ! heureusement que le Riddler est sous les verous... il faut que vous vous repassiez les films, cette fois en enlevant peut-etre le masque qui vous a bloqué la vue ! Aller, rien n'est perdu ! ";
@@ -167,7 +171,7 @@ function displayResult(){
         remerciement.textContent="Vous etes véritablement un super fan de l'univers de Batman ! Comics, films, rien ne vous échapper. Bruce Wayne a de quoi etre fier, Gotham est en paix et Batman peut prendre sa retraite, vous veillez aux gains ! ";
     } 
     reAgain.appendChild(btnFin);
-    contentResult.appendChild(reAgain);
+    contentResultFin.appendChild(reAgain);
     reAgain.addEventListener('click',()=>{
         reAgain.href="index2.html"
     });
