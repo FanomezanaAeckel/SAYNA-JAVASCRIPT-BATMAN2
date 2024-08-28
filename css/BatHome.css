@@ -88,9 +88,11 @@ nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  gap: 1em;
+  gap: 1.5em;
   top: 44vh;
   right: 2.6em;
+  width: 50px;
+  height: 8vh;
 }
 .reseau-scrol img {
   width: 70%;
@@ -178,7 +180,7 @@ footer {
 /* le display inline block transforme les element inline en element inline avec des width et des height  
 Au contraire, le display block donne deja ces deux element mais il revient a la ligne*/
 header {
-  background-image: url("/Assets/Illustrations/Bathome1.png");
+  background-image: url("../Assets/Illustrations/Bathome1.png");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;

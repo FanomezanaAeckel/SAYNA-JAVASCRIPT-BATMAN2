@@ -86,6 +86,8 @@ nav ul li a:hover {
   gap: 1.5em;
   top: 44vh;
   right: 2.6em;
+  width: 50px;
+  height: 8vh;
 }
 .reseau-scrol img {
   width: 70%;
@@ -167,7 +169,7 @@ footer {
 }
 
 header {
-  background-image: url("/Assets/Illustrations/Batgame_1.png");
+  background-image: url("../Assets/Illustrations/Batgame_1.png");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -281,7 +283,7 @@ main h1 {
 }
 #Result #resulcont .textfin {
   text-align: center;
-  color: #ffffff98fff96fffa9;
+  color: #ffff98;
 }
 #Result #resulcont #finbtn {
   text-decoration: none;
